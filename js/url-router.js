@@ -35,13 +35,15 @@ const urlRoutes = {
 const urlRoute = (event) => {
   event = event || window.event;
   event.preventDefault();
+  console.log({href: event.target.href})
   window.history.pushState({}, "", event.target.href);
   urlLocationHandler();
 };
 
 const urlLocationHandler = async () => {
-  const location = window.location.pathname;
-  if (location.length === 0) {
+  console.log({path: window.location.pathname})
+  const location = window.location.pathname.split('/')[2];
+  if (!location) {
     location = "/";
   }
   const route = urlRoutes[location] || urlRoute[404];
