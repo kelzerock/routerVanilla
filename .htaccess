@@ -2,6 +2,6 @@
     RewriteEngine on
     Options +FollowSymlinks -MultiViews
 
-    RewriteRule ^$ /index.html [R,L]
+    RewriteRule ^$ https://kelzerock.github.io/routerVanilla/index.html [R,L]
 
 </IfModule>
