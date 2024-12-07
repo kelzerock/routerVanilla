@@ -2,22 +2,22 @@ const pageTitle = "Test Routing JS";
 
 const routes = {
   404: {
-    template: "/templates/404.html",
+    template: "/404.html",
     title: "404 |" + pageTitle,
     description: "Page not found",
   },
   "/": {
-    template: "/templates/index.html",
+    template: "/index.html",
     title: "Home |" + pageTitle,
     description: "Home page",
   },
   about: {
-    template: "/templates/about.html",
+    template: "/about.html",
     title: "About |" + pageTitle,
     description: "About us page",
   },
   contact: {
-    template: "/templates/contact.html",
+    template: "/contact.html",
     title: "Contact |" + pageTitle,
     description: "Contact us page",
   },
