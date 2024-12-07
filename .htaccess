@@ -1,7 +1,6 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine on
-    Options +FollowSymlinks -MultiViews
-
-    RewriteRule ^$ https://kelzerock.github.io/routerVanilla/index.html [R,L]
-
-</IfModule>
+<ifModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule (.*) index.html [QSA,L]
+</ifModule>
