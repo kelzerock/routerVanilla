@@ -11,22 +11,22 @@ document.addEventListener("click", (e) => {
 
 const urlRoutes = {
   404: {
-    template: "/templates/404.html",
+    template: "../templates/404.html",
     title: "404 |" + urlPageTitle,
     description: "Page not found",
   },
   "/": {
-    template: "/templates/index.html",
+    template: "../templates/index.html",
     title: "Home |" + urlPageTitle,
     description: "Home page",
   },
   "/about": {
-    template: "/templates/about.html",
+    template: "../templates/about.html",
     title: "About |" + urlPageTitle,
     description: "About us page",
   },
   "/contact": {
-    template: "/templates/contact.html",
+    template: "../templates/contact.html",
     title: "Contact |" + urlPageTitle,
     description: "Contact us page",
   },
@@ -42,7 +42,7 @@ const urlRoute = (event) => {
 
 const urlLocationHandler = async () => {
   console.log({path: window.location.pathname})
-  const location = window.location.pathname.split('/')[2];
+  let location = window.location.pathname.split('/')[2];
   if (!location) {
     location = "/";
   }
