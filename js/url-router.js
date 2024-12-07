@@ -41,8 +41,8 @@ const urlRoute = (event) => {
 };
 
 const urlLocationHandler = async () => {
-  console.log({path: window.location.pathname})
-  let location = window.location.pathname.split('/')[2];
+  let path = window.location.pathname;
+  let location = path.slice(path.lastIndexOf("/"));
   if (!location) {
     location = "/";
   }
