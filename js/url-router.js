@@ -11,22 +11,22 @@ document.addEventListener("click", (e) => {
 
 const urlRoutes = {
   404: {
-    template: "routerVanilla/templates/404.html",
+    template: "./templates/404.html",
     title: "404 |" + urlPageTitle,
     description: "Page not found",
   },
   "/": {
-    template: "routerVanilla/templates/index.html",
+    template: "./templates/index.html",
     title: "Home |" + urlPageTitle,
     description: "Home page",
   },
   "/about": {
-    template: "routerVanilla/templates/about.html",
+    template: "./templates/about.html",
     title: "About |" + urlPageTitle,
     description: "About us page",
   },
   "/contact": {
-    template: "routerVanilla/templates/contact.html",
+    template: "./templates/contact.html",
     title: "Contact |" + urlPageTitle,
     description: "Contact us page",
   },
